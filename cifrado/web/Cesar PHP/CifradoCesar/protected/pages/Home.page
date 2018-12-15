@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Cifrado Cesar</title>
+</head>
+<body>
+	<com:TForm>
+		<div id="principal" style="text-align: center;">
+			<com:TLabel Text="Texto Plano"/>
+			<br/>
+			<com:TTextBox ID="textoPlano" TextMode="MultiLine" OnTextChanged="textChanged" AutoPostBack="true"/>
+			<br/>
+			<div id="cesar" style="display: inline-grid;">
+				<com:TLabel Text="Texto Cifrado Cesar"/>
+				<com:TLabel Text="Saltos"/>
+				<com:TTextBox ID="saltosCesar" OnTextChanged="cambioSaltoCesar" AutoPostBack="true"/>
+				<com:TLabel Text="Resultado"/>
+				<com:TTextBox ID="resultadoCesar" TextMode="MultiLine" />
+			</div>
+			
+			<div id="inverso" style="display: inline-grid;">
+				<com:TLabel Text="Texto Cifrado Inverso"/>
+				<com:TLabel Text="Resultado"/>
+				<com:TTextBox ID="resultadoInverso" TextMode="MultiLine" />
+			</div>
+
+			<div id="inversoSaltos" style="display: inline-grid;">
+				<com:TLabel Text="Texto Cifrado Inverso con saltos"/>
+				<com:TLabel Text="Saltos"/>
+				<com:TTextBox ID="saltosInverso" OnTextChanged="cambioSaltoInverso" AutoPostBack="true"/>
+				<com:TLabel Text="Resultado"/>
+				<com:TTextBox ID="resultadoInversoSaltos" TextMode="MultiLine"/>
+			</div>
+		</div>
+    </com:TForm>
+</body>
+</html>
