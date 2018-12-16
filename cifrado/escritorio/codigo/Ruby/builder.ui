@@ -1,0 +1,109 @@
+<interface>
+  <object class="GtkAdjustment" id="basic_adjustment">
+    <property name="lower">-10000</property>
+    <property name="upper">10000</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">3000</property>
+  </object>
+  <object id="window" class="GtkWindow">
+    <property name="visible">True</property>
+    <property name="title">Grid</property>
+    <property name="border-width">20</property>
+    <child>
+      <object id="grid" class="GtkGrid">
+        <property name="visible">True</property>
+        <child>
+          <object id="labelText" class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label">Texto</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object id="text" class="GtkEntry">
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">0</property>
+            <property name="width">3</property>
+          </packing>
+        </child>
+        <child>
+          <object id="LabelDisplacement" class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label">Desplazamiento</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkSpinButton" id="displacement">
+            <property name="visible">1</property>
+            <property name="halign">start</property>
+            <property name="width_chars">5</property>
+            <property name="adjustment">basic_adjustment</property>
+            <property name="climb_rate">1</property>
+            <property name="digits">0</property>
+            <property name="numeric">1</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object id="cesar" class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label">Cifrado Cesar</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">2</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object id="cifrado" class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label">Cifrado</property>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">4</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object id="textInvertido" class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label">Texto Invertido</property>
+          </object>
+          <packing>
+            <property name="left-attach">3</property>
+            <property name="top-attach">2</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+        <child>
+          <object id="textInvert" class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="label">Invertido</property>
+          </object>
+          <packing>
+            <property name="left-attach">3</property>
+            <property name="top-attach">4</property>
+            <property name="width">2</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+      </packing>
+    </child>
+  </object>
+</interface>
